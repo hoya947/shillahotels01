@@ -1,0 +1,499 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+}
+
+.inner {
+    max-width: 1440px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+
+
+/* 🧨🧨🧨footer🧨🧨🧨 */
+footer {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 240px 50px 240px;
+}
+
+footer .inner .footer_nav {
+    display: flex;
+    align-items: center;
+    height: 75px;
+}
+
+footer .inner .footer_nav::before {
+    content: '';
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #202020;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+footer .inner .footer_nav li {
+    margin-right: 24px;
+    font-weight: 100;
+    z-index: 1;
+}
+
+footer .inner .footer_nav li:hover {
+    color: #AC8A6E;
+    font-weight: normal;
+}
+
+footer .inner .footer_info {
+    margin-top: 25px;
+    display: flex;
+    position: relative;
+}
+
+footer .inner .footer_info .footer_address {
+    max-width: 1017px;
+    width: 100%;
+}
+
+footer .inner .footer_info .footer_address .address {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+footer .inner .footer_info .service {
+    width: 517px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner .footer_info .sns ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+footer .inner .footer_info .sns ul li {
+    margin-left: 25px;
+}
+
+footer .inner .footer_info .sns ul li a img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+footer .inner .footer_info .sns ul li:last-child a img {
+    width: 35px;
+}
+
+footer .inner .footer_info .sns ul li a:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+footer .inner .footer_copy {
+    margin-top: 50px;
+    color: #aaaaaa;
+    font-weight: 100;
+}
+
+
+/* 🎈🎈🎈header🎈🎈🎈 */
+
+#wrap.on::before {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-color: #f1e3c488;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    backdrop-filter: blur(10px);
+}
+
+header {
+    max-width: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    height: 100px;
+    z-index: 999999;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header.on {
+    width: 90%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    background-color: #ffffffbb;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+}
+
+header .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+header .inner .nav_menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .inner .nav_menu .rese {
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+header .inner .nav_menu .language {
+    margin-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+header .inner .nav_menu .language::before {
+    content: '';
+    background: url(../img/icon/Vector.png) center center / cover no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+header .inner h1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+header .inner .menu {
+    height: 18px;
+    cursor: pointer;
+    z-index: 999999999999;
+}
+
+header .inner .menu span {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    display: block;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+header .inner .menu.on span:nth-child(1) {
+    transform: translateY(6px) rotate(-45deg);
+}
+
+header .inner .menu.on span:nth-child(2) {
+    display: none;
+}
+
+header .inner .menu.on span:nth-child(3) {
+    transform: translateY(-2px) rotate(45deg);
+    margin-bottom: 0;
+}
+
+header .inner .gnb {
+    position: fixed;
+    left: -1500px;
+    top: 0;
+    background-color: #fff;
+    width: 50%;
+    height: 100vh;
+    z-index: 9999999;
+}
+
+header .inner .gnb .user {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F1E3C4;
+    color: #202020;
+}
+
+header .inner .gnb .user li {
+    z-index: 1;
+}
+
+header .inner .gnb .user li:hover {
+    color: #3E2B2C;
+    font-weight: normal;
+}
+
+header .inner .gnb .user .logo {
+    height: 100px;
+}
+
+header .inner .gnb .user .logo h1 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    display: flex;
+    transform: translateY(-50%);
+}
+
+header .inner .gnb .user .logo h1 img {
+    width: 120px;
+    object-fit: cover;
+}
+
+header .inner .gnb .user li:nth-child(1) {
+    position: relative;
+}
+
+header .inner .gnb .user li:nth-child(1)::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(../img/user.png) center center / cover no-repeat;
+    display: block;
+    position: absolute;
+    left: -22px;
+}
+
+header .inner .gnb .user li {
+    margin: 0 20px;
+}
+
+header .inner .gnb .in_gnb {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+header .inner .gnb .in_gnb .depth01 {
+    border-top: 1px solid #d3cdc1;
+    font-weight: 100;
+    color: #202020;
+}
+
+header .inner .gnb .in_gnb .depth01:last-child {
+    border-bottom: 1px solid #d3cdc1;
+}
+
+header .inner .gnb .in_gnb .depth01>a {
+    width: 100%;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    padding-left: 50px;
+}
+
+header .inner .gnb .in_gnb .depth01>a:hover {
+    background-color: #d3cdc1;
+    color: #3E2B2C;
+    font-weight: normal;
+}
+
+header .inner .gnb .in_gnb .depth01.on>a {
+    background-color: #d3cdc1;
+    color: #3E2B2C;
+    font-weight: normal;
+}
+
+header .inner .gnb .in_gnb .depth01 .depth02 li {
+    background-color: #ececec;
+    font-size: 14px;
+    font-weight: 100px;
+    padding: 25px 50px;
+}
+
+header .inner .gnb .in_gnb .depth01 .depth02 {
+    display: none;
+}
+
+header .inner .gnb .in_gnb .depth01 .depth02 li a:hover {
+    color: #3E2B2C;
+    font-weight: bold;
+}
+
+
+/* 로그인 */
+
+header .inner .login {
+    background-color: #fff;
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: #3E2B2C;
+    z-index: 99999999;
+    display: none;
+}
+
+header .inner .login .inner .form {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .inner .login .inner .form fieldset {
+    border: none;
+}
+
+header .inner .login .inner .form h3 {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .inner .login .inner .form h3>img {
+    width: 150px;
+    object-fit: cover;
+}
+
+header .inner .login .inner .close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    color: #202020;
+    font-size: 18px;
+}
+
+header .inner .login .inner .close:hover {
+    color: #3E2B2C;
+    font-weight: bold;
+}
+
+header .inner .login .inner .event_bn2 {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+header .inner .login .inner .form fieldset .box1 span a {
+    width: 150px;
+    height: 35px;
+    margin: 0 auto;
+    background-color: #3E2B2C;
+    color: #fff;
+    display: block;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+header .inner .login .inner .form fieldset .box label {
+    display: none;
+}
+
+header .inner .login .inner .form fieldset .box {
+    margin-bottom: 5px;
+}
+
+header .inner .login .inner .form fieldset .box:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    height: 25px;
+    border: 1px solid #3E2B2C;
+    padding: 0 10px;
+}
+
+header .inner .login .inner .form fieldset .box1 ul {
+    display: flex;
+    justify-content: center;
+}
+
+header .inner .login .inner .form fieldset .box1 ul li {
+    margin-left: 10px;
+}
+
+header .inner .login .inner .form fieldset .box1 ul li:hover {
+    color: #3E2B2C;
+    font-weight: bold;
+}
+
+@media screen and (max-width:960px) {
+
+    header .inner .nav_menu {
+        display: none;
+    }
+
+    header.on {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffffbb;
+        backdrop-filter: blur(5px);
+        transition: 0.5s;
+    }
+
+    header.on .inner h1 img {
+        width: 120px;
+        display: flex;
+    }
+
+    
+
+}
+
+/* max-width:960px */
+
+
+@media screen and (max-width:414px) {
+    
+    header .inner {
+        width: calc(100% - 10px);
+    }
+    
+    header .inner .menu {
+        width: 40%;
+    }
+
+    header .inner h1 img {
+        width: 120px;
+        display: flex;
+    }
+
+    header .inner .gnb {
+        width: 100%;
+    }
+
+
+} /* max-width:414px */
