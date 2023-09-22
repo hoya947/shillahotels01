@@ -193,10 +193,18 @@
                         $(this).addClass('on' + index)
                     } else if (scrollBar == 0) {
                         $('.event .list_event .item_event').removeClass('on' + index)
-                    }
+                    } 
                 })
 
             });
+
+            if($(window).width() < 767) {
+                if(event01Top - 100 <= scrollBar) {
+                    $(this).addClass('on' + index)
+                } else if (scrollBar == 0) {
+                    $('.event .list_event .item_event').removeClass('on' + index);
+                }
+            }
 
             let loginBtn = $('header .inner .gnb .user .login_btn');
             let loginInner = $('header .inner .login');

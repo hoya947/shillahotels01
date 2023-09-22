@@ -348,14 +348,15 @@ header .inner .gnb .in_gnb .depth01 .depth02 li a:hover {
 
 /* 로그인 */
 
+
 header .inner .login {
     background-color: #fff;
     width: 400px;
     height: 500px;
-    position: fixed;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 500px;
+    left: 60%;
+    transform: translateY(-60%);
     color: #3E2B2C;
     z-index: 99999999;
     display: none;
@@ -447,6 +448,14 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
     font-weight: bold;
 }
 
+@media screen and (max-width:1024px) {
+    header.on {
+        width: 100%;
+        position: fixed;
+        left: 0;
+    }
+}
+
 @media screen and (max-width:960px) {
 
     header .inner .nav_menu {
@@ -469,7 +478,30 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
         display: flex;
     }
 
+     /* 🎈🎈🎈footer🎈🎈🎈 */
+
+    footer {
+        padding: 0;
+    }
+
+    footer .inner .footer_nav {
+        font-size: 14px;
+        height: 65px;
+    }
+
+    footer .inner .footer_info .footer_address .address {
+        margin-bottom: 20px;
+        font-size: 14px;
+        display: block;
+    }
+
+    footer .inner .footer_info .footer_address .address li {
+        line-height: 20px;
+    }
     
+    footer .inner .footer_copy {
+        margin: 10px 0;
+    }
 
 }
 
@@ -478,12 +510,19 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
 
 @media screen and (max-width:414px) {
     
-    header .inner {
-        width: calc(100% - 10px);
+    header {
+        max-width: 414px;
+        width: 100%;
+        position: static;
     }
     
+    #wrap.on::before {
+        content: '';
+        display: none;
+    }
+
     header .inner .menu {
-        width: 40%;
+        width: 15px;
     }
 
     header .inner h1 img {
@@ -492,6 +531,21 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
     }
 
     header .inner .gnb {
+        width: 414px;
+    }
+
+    header .inner .gnb .user li {
+        padding-right: 50px;
+        margin: 0;
+    }
+
+    /* footer */
+
+    footer .inner .footer_info .service {
+        display: block;
+    }
+
+    footer .inner .footer_info .service {
         width: 100%;
     }
 
