@@ -670,10 +670,6 @@ body {
         display: none;
     }
 
-    .cont01 .list .item .swiper .swiper-slide {
-   
-    }
-
     .cont01 .list .item .swiper .swiper-slide img {
         max-width: 1024px;
     }
@@ -924,15 +920,23 @@ body {
     }
 
     .main_bn .inner .search .group {
-        height: 0;
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        transform: translateX(-50%);
+        width: 200px;
+        height: 210px;
+        position: relative;
+    }
+
+    .main_bn .inner .search .form-group .grid {
+        width: 210px;
+        height: 230px;
+        position: relative;
+        
     }
 
     .main_bn .inner .search .form-group .grid .col02 {
         left: 150px;
     }
+
+    
+
 
 }
