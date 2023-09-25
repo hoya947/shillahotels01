@@ -353,7 +353,7 @@ header .inner .login {
     background-color: #fff;
     width: 400px;
     height: 500px;
-    position: absolute;
+    position: fixed;
     top: 500px;
     left: 60%;
     transform: translateY(-60%);
