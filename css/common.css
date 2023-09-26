@@ -508,7 +508,7 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
 /* max-width:960px */
 
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:767px) {
     
     header {
         width: 100%;
