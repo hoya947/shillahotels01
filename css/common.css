@@ -519,6 +519,10 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
     header .inner h1 {
         width: 0;
     }
+
+    header .inner h1 img {
+        width: 120px;
+    }
     
     header .inner .menu {
         position: absolute;
@@ -538,16 +542,26 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
         width: 15px;
     }
 
-    header .inner h1 img {
-        width: 120px;
-        display: flex;
+    header .inner h1 > img {
+        object-fit: cover;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(40%);
     }
 
- 
+    header .inner .gnb .user {
+        position: static;
+    }
 
     header .inner .gnb .user li {
         padding-right: 50px;
         margin: 0;
+    }
+
+    header .inner .login {
+        left: 10%;
+        border: 1px solid #202020;
     }
 
     /* footer */
@@ -565,8 +579,10 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
     }
 
     footer .inner .footer_info .sns ul {
-       left: 50%;
-       transform: translateX(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
     }
 
     footer .inner .footer_info .footer_address .address {
