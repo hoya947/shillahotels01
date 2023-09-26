@@ -511,13 +511,26 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
 @media screen and (max-width:414px) {
     
     header {
-        max-width: 414px;
         width: 100%;
+        height: 100px;
         position: static;
     }
+
+    header .inner h1 {
+        width: 0;
+    }
     
+    header .inner .menu {
+        position: absolute;
+        right: 10%;
+    }
+
     #wrap.on::before {
         content: '';
+        display: none;
+    }
+
+    header.on {
         display: none;
     }
 
@@ -530,9 +543,7 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
         display: flex;
     }
 
-    header .inner .gnb {
-        width: 414px;
-    }
+ 
 
     header .inner .gnb .user li {
         padding-right: 50px;
@@ -541,13 +552,26 @@ header .inner .login .inner .form fieldset .box1 ul li:hover {
 
     /* footer */
 
-    footer .inner .footer_info .service {
-        display: block;
+    footer {
+        font-size: 12px;
+        text-align: center;
     }
 
+    footer .inner .footer_nav {
+        display: none;
+    }
     footer .inner .footer_info .service {
         width: 100%;
     }
 
+    footer .inner .footer_info .sns ul {
+       left: 50%;
+       transform: translateX(-50%);
+    }
+
+    footer .inner .footer_info .footer_address .address {
+        margin-top: 50px;
+    }
+    
 
 } /* max-width:414px */

@@ -910,33 +910,195 @@ body {
 
 @media screen and (max-width:414px) {
     
+   
     
     .main_bn .inner .search {
-        height: 230px;
+        height: 200px;
+        left: 0;
+        transform: none;
+        align-items: flex-start;
     }
 
-    .main_bn .inner .search .group .person p, .main_bn .inner .search .group .children p {
-        margin-bottom: 10px;
+    .main_bn .inner .search .form-group {
+        width: 100%;
+        margin-top: 10px;
     }
 
     .main_bn .inner .search .group {
-        width: 200px;
-        height: 210px;
-        position: relative;
+        width: 100%;
+        left: 50%;
+        top: -45px;
+        transform: translateX(-50%);
+        margin-left: 0;
     }
 
-    .main_bn .inner .search .form-group .grid {
-        width: 210px;
-        height: 230px;
-        position: relative;
-        
-    }
-
+    .main_bn .inner .search .form-group .grid .col01,
     .main_bn .inner .search .form-group .grid .col02 {
-        left: 150px;
+        width: 50%;
+        position: static;
     }
 
-    
+    .main_bn .inner .search .btn button {
+        width: 100%;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        transform: translateY(0);
+    }
 
+    .main_bn .inner .search .form-group .grid .col-1-4 .controls input {
+        font-size: 14px;
+        font-family: auto;
+    }
+
+
+    .cont01 {
+        height: 670px;
+    }
+
+    .cont01 .inner_btn .btn {
+        top: 320px;
+        left: 320px;
+    }
+
+    .cont01 .list .item .swiper .swiper-slide {
+        height: 50%;
+    }
+
+    .cont01 .list .item .swiper .swiper-slide img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cont01 .list .item .box {
+        position: absolute;
+        top: 200px;
+    }
+
+    .cont01 .list .item .box .inner .text p {
+        font-size: 14px;
+    }
+
+
+    .cont02 .inner .list {
+        display: block;
+    }
+
+    .cont02 .inner .list .item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cont02 .inner .list .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cont02 .inner .list .item .text a {
+        margin: 15px 0;
+    }
+
+    .cont03 .inner .list .item {
+        display: block;
+
+    }
+
+    .cont03 .inner .list .item img {
+        display: block;
+    }
+
+    .cont03 .inner .list .item .text .text_inner p {
+        font-size: 14px;
+    }
+
+    .cont03 .inner .list .item:last-child .text .text_inner,
+    .cont03 .inner .list .item:nth-child(2) .text .text_inner,
+    .cont03 .inner .list .item:first-child .text .text_inner {
+        position: static;
+        text-align: center;
+        transform: translate(0, 0);
+
+    }
+
+    .cont03 .inner .list .item .text {
+        width: auto;
+        height: auto;
+        padding: 25px;
+    }
+
+    .cont03 .inner .list .item:last-child .text .text_inner a, 
+    .cont03 .inner .list .item:first-child .text .text_inner a {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .cont03 .inner .list .item:nth-child(2) .text .text_inner a {
+        margin: 0 auto;
+    }
+
+    .cont02 .inner > h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .cont03 .inner>h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .sub_bn {
+        height: 150px;
+        margin: 50px 0;
+    }
+
+    .cont04 .inner h3 {
+        font-size: 30px;
+    }
+    
+    .cont04 .inner p {
+        font-size: 14px;
+    }
+
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 20px;
+    }
+
+    .event {
+        height: 960px;
+    }
+
+    .event>img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .event .inner > h3 {
+        font-size: 30px;
+        top: 100px;
+    }
+
+    .event .inner .list_event {
+        display: block;
+
+    }
+    
+    .event .inner .list_event .item_event {
+        width: 90%;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+    .event .inner .list_event .item_event>img {
+        width: 50px;
+        object-fit: cover;
+    }
+
+    .event .inner .text p {
+        width: 380px;
+        font-size: 13px;
+        height: 50px;
+    }
 
 }
