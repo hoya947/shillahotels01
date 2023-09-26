@@ -26,6 +26,7 @@ li {
 body {
     font-family: 'Pretendard-Regular';
     color: #202020;
+    overflow-x: hidden;
 }
 
 .inner {
