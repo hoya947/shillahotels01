@@ -959,7 +959,7 @@ body {
 
     .cont01 .inner_btn .btn {
         top: 320px;
-        left: 320px;
+        right: 0;
     }
 
     .cont01 .list .item .swiper .swiper-slide {
@@ -988,6 +988,10 @@ body {
     .cont02 .inner .list .item {
         width: 100%;
         height: 100%;
+    }
+
+    .cont01 .list .item .box .inner .text>a {
+        right: -10px;
     }
 
     .cont02 .inner .list .item img {
